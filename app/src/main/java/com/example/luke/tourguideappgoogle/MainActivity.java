@@ -14,15 +14,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        TextView toeat = (TextView) findViewById(R.id.history_text_view);
-        // Set a clickListener on that View
-        toeat.setOnClickListener(new View.OnClickListener() {
+        TextView history = (TextView) findViewById(R.id.history_text_view);
+        history.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View view) {
-                //Create a new intent to open the {@link WhereToEatActivity}
                 Intent history = new Intent(MainActivity.this, History.class);
-                //Start the new activity
                 startActivity(history);
             }
         });
