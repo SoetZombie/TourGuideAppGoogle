@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">TourGuideAppGoogle</string>
+    <string name="history">History</string>
+    <string name="restaurants">Restaurants</string>
+    <string name="fun">Fun</string>
+    <string name="relax">Relax</string>
+    <string name="history1">Square monument</string>
+    <string name="history_info1">Main Square monument in the city center</string>
+    <string name="history2">Episcopal Church</string>
+    <string name="history_info2">Holy street 26</string>
+    <string name="history3">Main Theatre</string>
+    <string name="history_info3">Holy street 88 </string>
+    <string name="history4">King Palace</string>
+    <string name="history_info4">Chore Street 48</string>
+    <string name="history5">Mining Hill</string>
+    <string name="history_info5">Miners Street 22</string>
+    <string name="history6">Fortune walk</string>
+    <string name="history_info6">Faith Street 41</string>
+    <string name="history7">Mystery Rottunde</string>
+    <string name="history_info7">1 district 86 center</string>
+</resources>
