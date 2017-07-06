@@ -11,26 +11,17 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
-
-/**
- * {@link PlaceAdapter} is an {@link ArrayAdapter} that can provide the layout for each list
- * based on a data source, which is a list of {@link Place} objects.
+/*
+Used fragemnts from Miwok code and some external fragments from forums, such as stackoverflow, android library, udacity forum
  */
 
 public class PlaceAdapter extends ArrayAdapter<Place> {
 
     private int mColorResourceId;
 
-    /**
-     * @param context The current context. Used to inflate the layout file.
-     * @param places  A List of Place objects to display in a list
-     */
+
     public PlaceAdapter(Activity context, ArrayList<Place> places, int colorResourceId) {
 
-        // Initialization of {@link Place}Adapter's internal storage for the context and the list.
-        // The second argument is used when the ArrayAdapter is populating a single TextView.
-        // Because this is a custom adapter for two TextViews, the adapter is not
-        // going to use this second argument, so it can be any value. Here, we used 0.
         super(context, 0, places);
         mColorResourceId = colorResourceId;
     }
@@ -38,7 +29,6 @@ public class PlaceAdapter extends ArrayAdapter<Place> {
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
-        // Check if the existing view is being reused, otherwise inflate the view
         View listItemView = convertView;
         if (listItemView == null) {
             listItemView = LayoutInflater.from(getContext()).inflate(
@@ -46,21 +36,21 @@ public class PlaceAdapter extends ArrayAdapter<Place> {
         }
 
         Place currentPlace = getItem(position);
-        View textContainer = listItemView.findViewById(R.id.container);
-        int color = ContextCompat.getColor(getContext(), mColorResourceId);
-        textContainer.setBackgroundColor(color);
+        View container = listItemView.findViewById(R.id.container);
+        int colour = ContextCompat.getColor(getContext(), mColorResourceId);
+        container.setBackgroundColor(colour);
 
-        TextView defaultTextView = (TextView) listItemView.findViewById(R.id.info_text_view);
-        defaultTextView.setText(currentPlace.getInfo());
+        TextView infoTextView = (TextView) listItemView.findViewById(R.id.info_text_view);
+        infoTextView.setText(currentPlace.getInfo());
 
-        TextView nameTextView = (TextView) listItemView.findViewById(R.id.name_view);
-        nameTextView.setText(currentPlace.getName());
+        TextView headingNameTextView = (TextView) listItemView.findViewById(R.id.name_view);
+        headingNameTextView.setText(currentPlace.getName());
 
-        ImageView imageView = (ImageView) listItemView.findViewById(R.id.image);
+        ImageView image = (ImageView) listItemView.findViewById(R.id.image);
         if (currentPlace.hasImage()) {
-            imageView.setImageResource(currentPlace.getImageResourceId());
-            imageView.setVisibility(View.VISIBLE);
-        } else imageView.setVisibility(View.GONE);
+            image.setImageResource(currentPlace.getImageResourceId());
+            image.setVisibility(View.VISIBLE);
+        } else image.setVisibility(View.GONE);
 
         return listItemView;
     }

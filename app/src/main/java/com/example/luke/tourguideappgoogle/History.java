@@ -17,8 +17,6 @@ public class History extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.list_final);
-
-        //Create an arrayList of places
         final ArrayList<Place> places = new ArrayList<Place>();
 
         places.add(new Place(getString(R.string.history1), getString(R.string.history_info1), R.mipmap.monument1));

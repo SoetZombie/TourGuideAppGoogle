@@ -6,33 +6,27 @@ package com.example.luke.tourguideappgoogle;
 
 public class Place {
     private static final int NO_IMAGE_PROVIDED = -1;
-    private String mName;
-    private String mInfo;
+    private String name;
+    private String info;
     private int mImageResourceId = NO_IMAGE_PROVIDED;
 
-    public Place(String mName, String mInfo, int mImageResourceId) {
-        this.mName = mName;
-        this.mInfo = mInfo;
+    public Place(String name, String info, int mImageResourceId) {
+        this.name = name;
+        this.info = info;
         this.mImageResourceId = mImageResourceId;
     }
 
-    public Place(String mName, String mInfo) {
-        this.mName = mName;
-        this.mInfo = mInfo;
+    public Place(String name, String info) {
+        this.name = name;
+        this.info = info;
     }
 
-
-
-
-
-
-
     public String getName() {
-        return mName;
+        return name;
     }
 
     public String getInfo() {
-        return mInfo;
+        return info;
     }
 
     public int getImageResourceId() {
