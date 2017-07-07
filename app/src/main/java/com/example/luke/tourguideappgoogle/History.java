@@ -1,7 +1,11 @@
 package com.example.luke.tourguideappgoogle;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ListView;
 
@@ -18,6 +22,14 @@ public class History extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.list_final);
         final ArrayList<Place> places = new ArrayList<Place>();
+        Button back = (Button) findViewById(R.id.back_button);
+        back.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                Intent back = new Intent(History.this, MainActivity.class);
+                startActivity(back);
+            }
+        });
 
         places.add(new Place(getString(R.string.history1), getString(R.string.history_info1), R.mipmap.monument1));
         places.add(new Place(getString(R.string.history2), getString(R.string.history_info2), R.mipmap.monument2));
@@ -34,5 +46,9 @@ public class History extends AppCompatActivity {
 
 
         listView.setAdapter(adapter);
+
+
     }
-}
+
+
+    }

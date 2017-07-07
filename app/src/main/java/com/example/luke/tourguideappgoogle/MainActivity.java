@@ -24,12 +24,32 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         TextView fun = (TextView) findViewById(R.id.fun_text_view);
-        history.setOnClickListener(new View.OnClickListener() {
+        fun.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View view) {
                 Intent fun = new Intent(MainActivity.this, Fun.class);
                 startActivity(fun);
+            }
+        });
+
+        TextView relax = (TextView) findViewById(R.id.relax_text_view);
+        relax.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                Intent relax = new Intent(MainActivity.this, Relax.class);
+                startActivity(relax);
+            }
+        });
+
+        TextView restaurant = (TextView) findViewById(R.id.restaurant_text_view);
+        restaurant.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                Intent res = new Intent(MainActivity.this, Restaurant.class);
+                startActivity(res);
             }
         });
     }

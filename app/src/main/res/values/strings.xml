@@ -1,5 +1,6 @@
 <resources>
-    <string name="app_name">TourGuideAppGoogle</string>
+    <string name="back">back</string>
+    <string name="app_name">Tour Guide Ostrava</string>
     <string name="history">History</string>
     <string name="restaurants">Restaurants</string>
     <string name="fun">Fun</string>
@@ -18,4 +19,43 @@
     <string name="history_info6">Faith Street 41</string>
     <string name="history7">Mystery Rottunde</string>
     <string name="history_info7">1 district 86 center</string>
+    <string name="fun1">Kid center </string>
+    <string name="fun_info1">Best place for small kids in center of Ostrava (San Alley Street 32) </string>
+    <string name="fun2">Beat Up dance crew </string>
+    <string name="fun_info2">Best dancers in Ostrava (Factory Street 86)</string>
+    <string name="fun3">Festival Coulours of Ostrava</string>
+    <string name="fun_info3">The biggiest festival in Ostrava (Vítkovice square)</string>
+    <string name="fun4">Hockey Stadium</string>
+    <string name="fun_info4">Main Ostrava hockey stadium events every sunday (To Go Street 24) </string>
+    <string name="fun5">Lasergame Ostrava</string>
+    <string name="fun_info5">Main Square 2 </string>
+    <string name="fun6">City Pool</string>
+    <string name="fun_info6">Free city pool in the center (Holy Street 14) </string>
+    <string name="fun7">Dinoland</string>
+    <string name="fun_info7">Old Square 55 </string>
+    <string name="res1">La Vida</string>
+    <string name="res_info1">Coll Street 48 </string>
+    <string name="res2">Daniels Burger</string>
+    <string name="res_info2">Main square 5 </string>
+    <string name="res3">Banana Ranch</string>
+    <string name="res_info3">Moly Street 5 </string>
+    <string name="res4">Hungry DK </string>
+    <string name="res_info4">San Jose Street 12 </string>
+    <string name="res5">Mama Food</string>
+    <string name="res_info5">Old Square 51 </string>
+    <string name="rex1">Spa Nord</string>
+    <string name="rex_info1">Northen hill</string>
+    <string name="rex2">Water pipes Volcano</string>
+    <string name="rex_info2">Old Square 231 </string>
+    <string name="rex3">Water pipes GFood</string>
+    <string name="rex_info3">Siu Land 12 </string>
+    <string name="rex4">Indian Spa</string>
+    <string name="rex_info4">Dork Street 22</string>
+    <string name="rex5">Wok Food with spa</string>
+    <string name="rex_info5">Main Square 78 </string>
+    <string name="rex6">Chinese fish aguarium</string>
+    <string name="rex_info6">Old Square 241 </string>
+    <string name="rex7">Salt lake</string>
+    <string name="rex_info7">Leakage 15 </string>
+
 </resources>
